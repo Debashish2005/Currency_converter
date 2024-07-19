@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="currency_converter.css">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <input type="checkbox" id="darkmode-toggle">
+    <label for="darkmode-toggle">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="6" stroke="#1C274C" stroke-width="1.5"/>
+            <path d="M12 2V3" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M12 21V22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M22 12L21 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3 12L2 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+            <path opacity="0.5" d="M19.0708 4.92969L18.678 5.32252" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+            <path opacity="0.5" d="M5.32178 18.6777L4.92894 19.0706" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+            <path opacity="0.5" d="M19.0708 19.0703L18.678 18.6775" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+            <path opacity="0.5" d="M5.32178 5.32227L4.92894 4.92943" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </label>
+    <script src="toggle.js"></script>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form action="">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" name="" id="" value="100">
+                <div class="dropdown">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                            <select name="from" id="">
+                                <option value="USD">USD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        <div class="to">
+                            <p>To</p>
+                            <div class="select-container">
+                                <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                                <select name="from" id="">
+                                    <option value="INR" selected>INR</option>
+                                </select>
+                        </div>
+                    </div>
+            </div>
+            <div class="msg">1 USD = 80 INR</div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+    <script  src="currency_converter.js"></script>
+</body>
+</html>
+
+
+
